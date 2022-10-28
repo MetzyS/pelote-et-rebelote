@@ -8,7 +8,8 @@
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf") format("ttf") tech("variations");
+    font-weight: 100 1000;
 }
 
 * {
@@ -81,3 +82,31 @@ h2 {
     text-decoration: none;
     color: #000;
 }
+
+/* Event List */
+.event-list-item a {
+    text-decoration: none;
+    color: #000;
+}
+.event-list-item {
+    border-bottom: 1px solid #eee;
+}
+/* Footer */
+/* Footer top */
+.footer-top {
+    background-color: var(--primary-color);
+}
+
+.nav-footer-item {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-footer-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+
+/* Footer bot */
