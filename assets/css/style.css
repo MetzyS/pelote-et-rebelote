@@ -1,14 +1,15 @@
 :root {
     --primary-color: #eee;
     --secondary-color: #FFAE85;
-    --main-st: 24px;
-    --secondary-st: 22px;
+    --primary-title-s: 24px;
+    --secondary-title-s: 22px;
     --text-s: 12px;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf") format("ttf") tech("variations");
+    font-weight: 100 1000;
 }
 
 * {
@@ -35,7 +36,7 @@ body {
 
 /* Main page */
 h1 {
-    font-size: var(--main-st);
+    font-size: var(--primary-title-s);
     font-weight: 700;
 }
 
@@ -44,13 +45,13 @@ h1 {
 }
 
 h2 {
-    font-size: var(--secondary-st);
+    font-size: var(--secondary-title-s);
     font-weight: 700;
     color: var(--secondary-color);
 }
 
 .page-subtitle-description {
-    font-size: calc(var(--secondary-st) / 2);
+    font-size: calc(var(--secondary-title-s) / 2);
     font-weight: 600;
     font-style: italic;
 }
@@ -72,7 +73,7 @@ h2 {
 }
 
 .event-next-title {
-    font-size: calc(var(--secondary-st) - 0.6em);
+    font-size: calc(var(--secondary-title-s) - 0.6em);
     font-weight: 600;
 }
 
@@ -81,3 +82,33 @@ h2 {
     text-decoration: none;
     color: #000;
 }
+
+/* Event List */
+.event-list-item a {
+    text-decoration: none;
+    color: #000;
+}
+.event-list-item {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/* Footer */
+/* Footer top */
+.footer-top {
+    background-color: var(--primary-color);
+}
+
+.nav-footer-item {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-footer-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+
+/* Footer bot */
+
