@@ -1,8 +1,8 @@
 :root {
     --primary-color: #eee;
     --secondary-color: #FFAE85;
-    --main-st: 24px;
-    --secondary-st: 22px;
+    --primary-title-s: 24px;
+    --secondary-title-s: 22px;
     --text-s: 12px;
 }
 
@@ -36,7 +36,7 @@ body {
 
 /* Main page */
 h1 {
-    font-size: var(--main-st);
+    font-size: var(--primary-title-s);
     font-weight: 700;
 }
 
@@ -45,13 +45,13 @@ h1 {
 }
 
 h2 {
-    font-size: var(--secondary-st);
+    font-size: var(--secondary-title-s);
     font-weight: 700;
     color: var(--secondary-color);
 }
 
 .page-subtitle-description {
-    font-size: calc(var(--secondary-st) / 2);
+    font-size: calc(var(--secondary-title-s) / 2);
     font-weight: 600;
     font-style: italic;
 }
@@ -73,7 +73,7 @@ h2 {
 }
 
 .event-next-title {
-    font-size: calc(var(--secondary-st) - 0.6em);
+    font-size: calc(var(--secondary-title-s) - 0.6em);
     font-weight: 600;
 }
 
@@ -89,7 +89,7 @@ h2 {
     color: #000;
 }
 .event-list-item {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--primary-color);
 }
 /* Footer */
 /* Footer top */

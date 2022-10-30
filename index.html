@@ -7,14 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Test</title>
+  <title>Accueil</title>
 </head>
 
 <body>
   <header>
     <div class="header-top">
-      <a href="#">
-        <img src="" alt="Logo - Pelotes et Rebelote" />
+      <a class="header-top-logo" href="#">
+        <picture class="header-top-logo-versions">
+          <source class="header-top-logo" media="(min-width: 1150px)" srcset="assets/image/logo_full.svg">
+          <source class="header-top-logo" media="(max-width: 768px)" srcset="assets/image/logo_letters.svg">
+          <img class="header-top-logo" src="assets/image/logo_letters.svg" alt="Logo - Pelotes et Rebelote" width="201" height="20">
+        </picture>
       </a>
       <nav>
         <ul class="nav-list">
@@ -23,18 +27,34 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Infos</a>
+            <ul class="nav-list-wrapper">
+              <li class="nav-item">
+                <a href="#" class="nav-link">L'association</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Realisations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Evenements</a>
+            <ul class="nav-list-wrapper">
+              <li class="nav-item">
+                <a href="#" class="nav-link">À venir</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/archives.html" class="nav-link">Archives</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
     </div>
     <div class="header-bot">
-      <img src="" alt="Header banner" />
+      <img src="assets/image/banner-bg.jpg" width="1440" height="234" alt="Header banner" />
     </div>
   </header>
 
@@ -55,7 +75,7 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Accusantium necessitatibus facilis dicta.
         </p>
-        <img class="event-next-photo" src="" alt="Photo de création de noel" />
+        <img class="event-next-photo" src="assets/image/photo-event-noel.jpg" width="417" height="234" alt="Photo de création de noel" />
         <a href class="event-next-link button">Lire la suite</a>
       </article>
       <ul class="event-list">
