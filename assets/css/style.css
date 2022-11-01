@@ -33,6 +33,38 @@ body {
 
 /* Header */
 
+.header-top-logo{
+    display: flex;
+    justify-content: center;
+    margin: 7px 0;
+}
+
+/*Ham-menu*/
+
+.ham-menu-wrapper{
+    width: 100vw;
+    position: relative;
+    top:0;
+    transform: translateY(-150%);
+    transition: 1s;
+
+}
+
+.nav-link{
+    background-color: var(--secondary-color);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border-bottom: 1px solid white;
+}
+
+#ham-menu:checked ~ .ham-menu-wrapper{
+    transform: translateY(0px);
+}
 
 /* Main page */
 h1 {
