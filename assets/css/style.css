@@ -31,40 +31,122 @@ body {
 }
 
 
+@media screen and (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 8fr 2fr;
+    }
+    .page-main-title {
+        grid-column-start: span 3;
+    }
+    .event {
+        grid-area: 2 / 2 / 2 / 3;
+    }
+    .planning {
+        grid-area: 3 / 2 / 3 / 3;
+    }
+
+
+    .none {
+      display: none;
+    }
+  } 
+
 /* Header */
+header {
+    padding: 7px 0;
+}
 
 .header-top-logo{
     display: flex;
     justify-content: center;
-    margin: 7px 0;
 }
+
+@media screen and (min-width: 768px) {
+    .header-top {
+      display: flex;
+      justify-content: space-around;
+    }
+} 
+
+/* Nav */
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid white;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+      display: flex;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list-wrapper {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: calc(var(--text-s) * 1.2);
+        color: #000;
+        padding: 10px;
+        background-color: #fff;
+        border: none;
+    }
+} 
+
 
 /*Ham-menu*/
 
 .ham-menu-wrapper{
     width: 100vw;
-    position: relative;
-    top:0;
+    position: absolute;
+    top: auto;
     transform: translateY(-150%);
     transition: 1s;
-
 }
 
-.nav-link{
-    background-color: var(--secondary-color);
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-    border-bottom: 1px solid white;
-}
+@media screen and (min-width: 768px) {
+    .ham-menu-wrapper {
+        width: auto;
+        position: relative;
+      transform: none;
+    }
+  } 
 
 #ham-menu:checked ~ .ham-menu-wrapper{
     transform: translateY(0px);
 }
+
+/* Banner */
+.banner {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+      display: block;
+    }
+  } 
 
 /* Main page */
 h1 {
