@@ -12,59 +12,61 @@
 
 <body>
   <header>
-    <div class="header-top">
-      <a class="header-top-logo" href="#">
-        <picture class="header-top-logo-versions">
-          <source class="header-top-logo" media="(min-width: 1150px)" srcset="assets/image/logo_full.svg">
-          <source class="header-top-logo" media="(max-width: 768px)" srcset="assets/image/logo_letters.svg">
-          <img class="header-top-logo" src="assets/image/logo_letters.svg" alt="Logo - Pelotes et Rebelote" width="201"
-            height="20">
-        </picture>
-      </a>
-      <nav>
-        <input type="checkbox" id="ham-menu">
-        <label for="ham-menu"></label>
-        <div class="ham-menu-wrapper">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Infos</a>
-              <ul class="nav-list-wrapper">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">L'association</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Realisations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Evenements</a>
-              <ul class="nav-list-wrapper">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">À venir</a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/archives.html" class="nav-link">Archives</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        
-      </nav>
+    <div class="header-top grid">
+      <div class="header-top-wrapper">
+        <a class="header-top-logo" href="#">
+          <picture class="header-top-logo-versions">
+            <source class="header-top-logo" media="(min-width: 768px)" srcset="assets/image/logo_full.svg">
+            <source class="header-top-logo" media="(max-width: 768px)" srcset="assets/image/logo_letters.svg">
+            <img class="header-top-logo" src="assets/image/logo_letters.svg" alt="Logo - Pelotes et Rebelote"
+              width="201" height="20">
+          </picture>
+        </a>
+        <nav>
+          <input class="none" type="checkbox" id="ham-menu">
+          <label class="none" for="ham-menu"></label>
+          <div class="ham-menu-wrapper">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Infos</a>
+                <ul class="nav-list-wrapper">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">L'association</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Realisations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Evenements</a>
+                <ul class="nav-list-wrapper">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">À venir</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/archives.html" class="nav-link">Archives</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+      </div>
     </div>
     <div class="header-bot">
-      <img src="assets/image/banner-bg.jpg" width="1440" height="234" alt="Header banner" />
+      <img class="banner" src="assets/image/banner-bg.jpg" width="1440" height="234" alt="Header banner" />
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main grid">
     <h1 class="page-main-title">Accueil</h1>
     <section class="event">
       <div class="page-main-subtitle">
@@ -200,16 +202,16 @@
   </main>
 
   <footer>
-    <div class="footer-top">
+    <div class="footer-top grid">
       <ul class="nav-footer-list">
         <li class="nav-footer-item">
-          <a href="#" class="nav-footer-link">Nous Rejoindre</a>
+          <a href="#" class="nav-footer-link" id="link1">Nous Rejoindre</a>
         </li>
         <li class="nav-footer-item">
-          <a href="#" class="nav-footer-link">Mentions Légales</a>
+          <a href="#" class="nav-footer-link" id="link2">Mentions Légales</a>
         </li>
         <li class="nav-footer-item">
-          <a href="#" class="nav-footer-link">Contact</a>
+          <a href="#" class="nav-footer-link" id="link3">Contact</a>
         </li>
       </ul>
     </div>
