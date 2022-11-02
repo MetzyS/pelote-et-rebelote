@@ -247,14 +247,11 @@ h2 {
 }
 
 .inner-list-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .inner-nav-list {
     grid-template: repeat(3, 1fr) / repeat(4, 1fr);
     gap: 0.5px;
-    width: 100vw;
 }
 
 .inner-nav-link {
