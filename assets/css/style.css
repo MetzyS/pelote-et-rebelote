@@ -326,6 +326,7 @@ h2 {
 
     .nav-footer-item {
         box-shadow: none;
+        color: red;
     }
 }
 
