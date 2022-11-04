@@ -67,6 +67,7 @@ body {
 
 .header-top {
     position: relative;
+    padding: 10px;
 }
 
 .header-top-wrapper {
@@ -269,6 +270,8 @@ h1 {
 .page-main-title {
     background-color: var(--primary-color);
     text-align: center;
+    padding: 30px;
+    
 }
 
 h2 {
@@ -276,7 +279,10 @@ h2 {
     font-weight: 700;
     color: var(--secondary-color);
 }
-
+.page-main-subtitle{
+    text-align: center;
+    padding: 55px;
+}
 .page-subtitle-description {
     font-size: calc(var(--secondary-title-s) / 2);
     font-weight: 600;
@@ -287,33 +293,52 @@ h2 {
 .event-type {
     text-transform: uppercase;
     color: var(--secondary-color);
+   
 }
 
 .event-date {
     font-size: calc(var(--text-s) - 0.2em);
-    font-weight: 300;
+    font-weight: 300;  
+    display: block;
+
+}
+.event-list{
+    padding: 10px;
 }
 
 /* Article Event - Next*/
 .event-next {
     background-color: var(--primary-color);
+    text-align: center;
+    padding: 21px;
 }
 
 .event-next-title {
     font-size: calc(var(--secondary-title-s) - 0.6em);
     font-weight: 600;
+    padding: 5px;
 }
 
 .event-next-link {
     display: inline-block;
     text-decoration: none;
     color: #000;
+    font-size: calc(var(--text-s) + 2px);
+    width: 85%;
+    padding: 5px;
+}
+.event-next-photo{
+    width: 75%;
+    height: 75%;
+    padding: 5px;
 }
 
 /* Event List */
 .event-list-item a {
     text-decoration: none;
     color: #000;
+    display: inline-block;
+    padding: 10px;
 }
 
 .event-list-item {
@@ -398,11 +423,13 @@ h2 {
 /* Footer top */
 .footer-top {
     background-color: var(--primary-color);
+    text-align: center;
 }
 
 .nav-footer-item {
     list-style: none;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 16px;
 }
 
 .nav-footer-item a {
@@ -415,6 +442,7 @@ h2 {
 
 .social-list {
     list-style: none;
+    padding: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -427,7 +455,9 @@ h2 {
     .nav-footer-item {
         box-shadow: none;   
     }
+    
 }
+
 
 /* Footer bot */
 /*
