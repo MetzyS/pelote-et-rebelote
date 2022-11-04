@@ -112,14 +112,16 @@ nav ul {
 @media screen and (min-width: 768px) {
     nav {
         display: flex;
+        order: 1;
+        align-items: center;
     }
 
     .nav-list {
         display: flex;
     }
 
-    .nav-list-wrapper {
-        display: none;
+    .nav-item {
+        position: relative;
     }
 
     .nav-link {
@@ -128,6 +130,35 @@ nav ul {
         padding: 10px;
         background-color: #fff;
         border: none;
+    }
+
+    .nav-link:hover,
+    .nav-link:active {
+        font-weight: 600;
+        background-color: var(--secondary-color);
+    } 
+
+    .nav-list-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        flex-wrap: wrap;
+        /* width: 1160px; */
+        margin-top: 34px;
+        visibility: hidden;
+        z-index: 3;
+    }
+
+    .nav-list-wrapper .nav-link {
+        min-width: 250px;
+        justify-content: flex-start;
+    }
+
+    .nav-link:hover + .nav-list-wrapper,
+    .nav-list-wrapper:hover {
+        display: flex;
+        visibility: visible;
     }
 }
 
@@ -203,9 +234,15 @@ nav ul {
 
 
 @media screen and (min-width: 768px) {
+    .ham-menu-button {
+        display: none;
+    }
+    
     .ham-menu-wrapper {
         width: auto;
         position: relative;
+        top: auto;
+        left: auto;
         transform: none;
     }
 }
