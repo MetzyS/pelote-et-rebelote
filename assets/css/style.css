@@ -325,8 +325,33 @@ h2 {
     }
 
     .nav-footer-item {
-        box-shadow: none;
+        box-shadow: none;   
     }
 }
 
 /* Footer bot */
+/*
+.social-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas: ". fb insta twitter ." ;
+    
+}
+.fb{
+    grid-area: fb;
+}
+
+.insta{
+    grid-area: insta;
+}
+
+.twitter{
+    grid-area: twitter;
+}*/
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    
+}
+
