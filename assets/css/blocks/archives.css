@@ -26,9 +26,6 @@
     border: none;
 }
 
-.inner-list-wrapper {
-}
-
 .inner-nav-list {
     grid-template: repeat(3, 1fr) / repeat(4, 1fr);
     gap: 0.5px;
