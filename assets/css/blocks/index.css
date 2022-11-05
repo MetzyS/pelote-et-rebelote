@@ -1,0 +1,57 @@
+@import url("../style.css");
+
+/* Section Event */
+.event-type {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+   
+}
+
+.event-date {
+    font-size: calc(var(--text-s) - 0.2em);
+    font-weight: 300;  
+    display: block;
+
+}
+.event-list{
+    padding: 10px;
+}
+
+/* Article Event - Next*/
+.event-next {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 21px;
+}
+
+.event-next-title {
+    font-size: calc(var(--secondary-title-s) - 0.6em);
+    font-weight: 600;
+    padding: 5px;
+}
+
+.event-next-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: calc(var(--text-s) + 2px);
+    width: 85%;
+    padding: 5px;
+}
+.event-next-photo{
+    width: 75%;
+    height: 75%;
+    padding: 5px;
+}
+
+/* Event List */
+.event-list-item a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 10px;
+}
+
+.event-list-item {
+    border-bottom: 1px solid var(--primary-color);
+}
