@@ -1,0 +1,45 @@
+@import url("../style.css");
+
+:root {
+    --event-title-color: #ff5500;
+}
+
+.event-next-block {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.event-title-wrapper {
+    padding: 35px;
+}
+
+.event-title,
+.event-date {
+    color: var(--event-title-color);
+    font-weight: 600;
+    font-size: calc(var(--primary-title-s) * 0.75);
+}
+
+.event-date {
+    font-style: italic;
+}
+
+.event-block-text {
+    text-align: start;
+    padding: 0 15px;
+}
+
+.event-img {
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.inscription-title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--primary-title-s) * 0.75);
+}
