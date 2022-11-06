@@ -44,12 +44,12 @@
     background-color: var(--secondary-color);
 }
 
-.slider-input-1:checked ~ .slider-controls label[for=slide-1],
-.slider-input-2:checked ~ .slider-controls label[for=slide-2],
-.slider-input-3:checked ~ .slider-controls label[for=slide-3],
-.slider-input-4:checked ~ .slider-controls label[for=slide-4],
-.slider-input-5:checked ~ .slider-controls label[for=slide-5],
-.slider-input-6:checked ~ .slider-controls label[for=slide-6] {
+.slider-input-1:checked~.slider-controls label[for=slide-1],
+.slider-input-2:checked~.slider-controls label[for=slide-2],
+.slider-input-3:checked~.slider-controls label[for=slide-3],
+.slider-input-4:checked~.slider-controls label[for=slide-4],
+.slider-input-5:checked~.slider-controls label[for=slide-5],
+.slider-input-6:checked~.slider-controls label[for=slide-6] {
     background-color: var(--primary-color);
 }
 
@@ -58,12 +58,12 @@
     display: none;
 }
 
-.slider-input-1:checked ~ .slides .slide-1,
-.slider-input-2:checked ~ .slides .slide-2,
-.slider-input-3:checked ~ .slides .slide-3,
-.slider-input-4:checked ~ .slides .slide-4,
-.slider-input-5:checked ~ .slides .slide-5,
-.slider-input-6:checked ~ .slides .slide-6 {
+.slider-input-1:checked~.slides .slide-1,
+.slider-input-2:checked~.slides .slide-2,
+.slider-input-3:checked~.slides .slide-3,
+.slider-input-4:checked~.slides .slide-4,
+.slider-input-5:checked~.slides .slide-5,
+.slider-input-6:checked~.slides .slide-6 {
     display: grid;
 }
 
@@ -137,4 +137,4 @@
     .archives-block .desktop-visible img {
         width: 100%;
     }
-} 
+}
