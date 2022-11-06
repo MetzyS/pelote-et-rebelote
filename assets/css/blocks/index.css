@@ -15,6 +15,13 @@
 }
 .event-list{
     padding: 10px;
+    list-style: none; 
+}
+@media screen and (min-width: 768px){
+    .event-container{
+        display: flex;
+        background-color: var(--primary-color);
+    }
 }
 
 /* Article Event - Next*/
@@ -42,6 +49,31 @@
     width: 75%;
     height: 75%;
     padding: 5px;
+}
+
+@media screen and (min-width: 768px){
+    .event-next{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .event-next-photo{
+        order: -1;
+        width: 95%;
+    }
+    .event-next-title{
+        padding: 0;
+    }
+    .event-next-block{
+        margin-top: 5px;
+    }
+    .event-next-texte{
+        width: 60%;
+    }
+    .event-next-link{
+        width:20%;
+        margin: 40px 60px 0px;
+    }
 }
 
 /* Event List */
