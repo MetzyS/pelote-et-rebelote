@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" href="assets/css/style.css" />-->
+  <link rel="stylesheet" href="assets/css/blocks/index.css">
   <title>Accueil</title>
 </head>
 
@@ -125,7 +126,7 @@
       </ul>
     </section>
     <section class="planning">
-      <div class="page-subtitle">
+      <div class="page-main-subtitle">
         <h2>Planning</h2>
         <span class="page-subtitle-description">Horaires des activités hebdomadaires.</span>
       </div>
@@ -205,32 +206,59 @@
 
   <footer>
     <div class="footer-top grid">
-      <ul class="nav-footer-list">
-        <li class="nav-footer-item">
-          <a href="#" class="nav-footer-link" id="link1">Nous Rejoindre</a>
-        </li>
-        <li class="nav-footer-item">
-          <a href="#" class="nav-footer-link" id="link2">Mentions Légales</a>
-        </li>
-        <li class="nav-footer-item">
-          <a href="#" class="nav-footer-link" id="link3">Contact</a>
-        </li>
-      </ul>
+      <section>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item rejoindre">
+            <a href="#" class="footer-nav-link">Nous Rejoindre</a>
+            <ul class="rejoindre-list desktop-visible">
+              <li class="rejoindre-item">
+                <a href="#" class="rejoindre-link">Qui sommes-nous</a>
+              </li>
+              <li class="rejoindre-item">
+                <a href="#" class="rejoindre-link">L’Équipe</a>
+              </li>
+              <li class="rejoindre-item">
+                <a href="#" class="rejoindre-link">Bénévolat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Mentions Légales</a>
+          </li>
+          <li class="footer-nav-item footer-adresse">
+            <a href="#" class="footer-nav-link">Pelotes et Rebelote</a>
+            <div class="footer-adresse-block desktop-visible">
+              <p>Association de loi 1901<br>
+                1 RUE DES PINTADES<br>
+                34000 MONTPELLIER</p>
+                <a href="tel:+33400000000">04.00.00.00.00</a>
+                <a href="mailto:contact@peloterebelote.org">contact@peloterebelote.org</a>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
-    <div class="footer-bot">
-      <ul class="social-list">
-        <li class="social-item fb">
-          <a href="#" class="social-link"> <img src="assets/image/icon-fb.svg" alt="icon fb"></a>
-        </li>
-        <li class="social-item insta">
-          <a href="#" class="social-link"> <img src="assets/image/icon-insta.svg" alt="icon insta"></a>
-        </li>
-        <li class="social-item twitter">
-          <a href="#" class="social-link"> <img src="assets/image/icon-twitter.svg" alt="icon twitter"></a>
-        </li>
-      </ul>
+    <div class="footer-bot grid">
+      <section>
+        <ul class="social-list">
+          <li class="social-item fb">
+            <a href="#" class="social-link"> <img src="assets/image/icon-fb.svg" alt="icon fb"></a>
+          </li>
+          <li class="social-item insta">
+            <a href="#" class="social-link"> <img src="assets/image/icon-insta.svg" alt="icon insta"></a>
+          </li>
+          <li class="social-item twitter">
+            <a href="#" class="social-link"> <img src="assets/image/icon-twitter.svg" alt="icon twitter"></a>
+          </li>
+        </ul>
+        <div class="footer-copyright desktop-visible">
+          <p>PELOTES ET REBELOTES COPYRIGHT © 2022 - TOUS DROITS RÉSÉRVES.</p>
+        </div>
+        <a class="footer-logo desktop-visible" href="#">
+          <img src="assets/image/logo_half.svg" width="41" height="43" alt="Footer logo - Pelotes et Rebelote">
+        </a>
+      </section>
     </div>
-
   </footer>
 </body>
 
