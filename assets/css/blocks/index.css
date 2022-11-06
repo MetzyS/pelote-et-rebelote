@@ -4,21 +4,23 @@
 .event-type {
     text-transform: uppercase;
     color: var(--secondary-color);
-   
+
 }
 
 .event-date {
     font-size: calc(var(--text-s) - 0.2em);
-    font-weight: 300;  
+    font-weight: 300;
     display: block;
 
 }
-.event-list{
+
+.event-list {
     padding: 10px;
-    list-style: none; 
+    list-style: none;
 }
-@media screen and (min-width: 768px){
-    .event-container{
+
+@media screen and (min-width: 768px) {
+    .event-container {
         display: flex;
         background-color: var(--primary-color);
     }
@@ -45,33 +47,39 @@
     width: 85%;
     padding: 5px;
 }
-.event-next-photo{
+
+.event-next-photo {
     width: 75%;
     height: 75%;
     padding: 5px;
 }
 
-@media screen and (min-width: 768px){
-    .event-next{
+@media screen and (min-width: 768px) {
+    .event-next {
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    .event-next-photo{
+
+    .event-next-photo {
         order: -1;
         width: 95%;
     }
-    .event-next-title{
+
+    .event-next-title {
         padding: 0;
     }
-    .event-next-block{
+
+    .event-next-block {
         margin-top: 5px;
     }
-    .event-next-texte{
+
+    .event-next-texte {
         width: 60%;
     }
-    .event-next-link{
-        width:20%;
+
+    .event-next-link {
+        width: 30%;
         margin: 40px 60px 0px;
     }
 }
@@ -86,4 +94,50 @@
 
 .event-list-item {
     border-bottom: 1px solid var(--primary-color);
+}
+
+/* Tableau Planning */
+
+.planning-table-container {
+    overflow-x: scroll;
+    margin-bottom: 100px;
+}
+
+.planning-table {
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 520px;
+    width: 520px;
+}
+
+.planning-table td {
+    border: 1px solid black;
+}
+
+.planning-table-couture {
+    background-color: #d9d2e9;
+}
+
+.planning-table-enfant,
+.planning-table-bebe {
+    background-color: #cfe2f3;
+}
+
+.planning-table-tricot {
+    background-color: #ead1dc;
+}
+
+@media screen and (min-width: 768px) {
+    .planning-table-container {
+        display: flex;
+        overflow: auto;
+        margin-bottom: 100px;
+    }
+
+    .planning-table {
+        flex-grow: 1;
+    }
+
+
 }
