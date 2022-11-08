@@ -81,24 +81,52 @@
                     <span class="event-date">du 24/10/2022 au 30/10/2022</span>
                 </div>
                 <div class="event-block-text">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                         printer took a galley of
-                        type and scrambled it to make a type.</p>
-
+                        type and scrambled it to make a type.</p><br>
                     <p>It has survived not only five centuries, simply dummy text of the printing and typesetting
-                        industry.
+                        industry. </p>
                     <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
+                    <br>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <img class="event-img" src="../assets/image/event-pumpkin-img.png" width="319" height="221"
                         alt="Photo de création de noel" />
                 </div>
             </article>
+            <div class="event-pagination-wrapper">
+                <div class="pagination">
+                    <span>Pagination</span>
+                </div>
+            </div>
         </section>
         <section class="inscription">
             <div class="inscription-wrapper">
                 <span class="inscription-title">Pré-inscription</span>
+                <form action="">
+                    <div class="input-wrapper">
+                    <label for="inscription-last-name" class="inscription-label">Votre Nom <span
+                            class="inscription-span">(obligatoire)</span></label>
+                    <input type="text" name="inscription-last-name" id="inscription-last-name" class="inscription-input"
+                        placeholder="Votre nom..." required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="inscription-first-name" class="inscription-label">Votre Prenom <span class="inscription-span">(obligatoire)</span></label>
+                        <input type="text" name="inscription-first-name" id="inscription-first-name" class="inscription-input" placeholder="Votre prenom..." required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="inscription-email" class="inscription-label">Votre Email <span class="inscription-span">(obligatoire)</span></label>
+                        <input type="email" name="inscription-email" id="inscription-email" class="inscription-input" placeholder="Votre email..." required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="inscription-phone" class="inscription-label">Votre téléphone <span class="inscription-span">(obligatoire)</span></label>
+                        <input type="phone" name="inscription-phone" id="inscription-phone" class="inscription-input" placeholder="Votre téléphone..." required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="inscription-message" class="inscription-label">Votre message <span class="inscription-span">(1200 caracteres max)</span></label>
+                        <textarea name="inscription-message" id="inscription-message" cols="30" rows="10" class="inscription-message" placeholder="Votre message..." maxlength="1200" required></textarea>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
