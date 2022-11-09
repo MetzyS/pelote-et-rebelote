@@ -72,8 +72,31 @@
     flex-direction: column;
 }
 
+.archives-block {
+    padding: 20px 10px;
+}
+
+.archives-block:nth-of-type(odd) {
+    background-color: var(--primary-color);
+}
+
 .archives-block-title {
     order: -1;
+}
+
+.article-title {
+    position: relative;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.article-title-date {
+    font-style: italic;
+}
+
+.archives-block-photo {
+    max-width: 100%;
+    margin: 2% auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -87,17 +110,17 @@
         top: 0;
         display: flex;
         float: left;
-        width: 20%;
         min-height: 300px;
-        z-index: 5;
+        margin-left: -135px;
     }
 
     .archives-wrapper {
         float: left;
-        width: 80%;
+        min-width: 550px;
     }
 
     .archives-block {
+        min-width: 550px;
         padding-bottom: 30px;
     }
 
@@ -127,7 +150,32 @@
 
     .archives-block-photo {
         float: left;
+        margin-top: 0;
         margin-right: 2%;
+    }
+
+    .article-title {
+        text-align: start;
+    }
+
+    .article-title::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .beach .article-title::after {
+        background-image: url(../../image/article-title-beach-icon.svg);
+    }
+
+    .winter .article-title::after {
+        background-image: url(../../image/article-title-winter-icon.svg);
     }
 
     .archives-block p {
