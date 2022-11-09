@@ -264,6 +264,7 @@ nav ul {
 #ham-menu:checked ~ .ham-menu-wrapper {
     transform: translateY(0px);
     visibility: visible;
+    z-index: 3;
 }
 
 
