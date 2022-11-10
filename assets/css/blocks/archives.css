@@ -87,7 +87,7 @@
 .article-title {
     position: relative;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--secondary-color-intense);
 }
 
 .article-title-date {
@@ -111,6 +111,7 @@
         display: flex;
         align-self: flex-start;
         min-height: 300px;
+        margin-top: 20px;
         margin-right: 20px;
     }
 
@@ -120,7 +121,7 @@
 
     .archives-block {
         min-width: 550px;
-        padding-bottom: 30px;
+        padding: 20px 20px 30px;
     }
 
     .archives-nav-block {
