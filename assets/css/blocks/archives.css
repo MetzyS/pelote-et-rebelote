@@ -109,9 +109,13 @@
         position: sticky;
         top: 0;
         display: flex;
+        align-self: flex-start;
         float: left;
         min-height: 300px;
-        margin-left: -135px;
+    }
+
+    .archives-container {
+        display: flex;
     }
 
     .archives-wrapper {
@@ -156,6 +160,7 @@
 
     .article-title {
         text-align: start;
+        padding-right: 40px;
     }
 
     .article-title::after {
