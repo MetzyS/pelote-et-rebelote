@@ -110,17 +110,12 @@
         top: 0;
         display: flex;
         align-self: flex-start;
-        float: left;
         min-height: 300px;
+        margin-right: 20px;
     }
 
     .archives-container {
         display: flex;
-    }
-
-    .archives-wrapper {
-        float: left;
-        min-width: 550px;
     }
 
     .archives-block {
