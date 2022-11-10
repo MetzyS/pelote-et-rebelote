@@ -122,15 +122,15 @@
   margin: 10px auto 40px auto;
 }
 
-.submit-button {
+.block-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.submit-button button {
+.block-button button {
   background-color: #ffae85;
-  height: 45px;
+  /* height: 45px; */
   flex-grow: 1;
   margin: 0;
   padding: 0;
@@ -138,4 +138,30 @@
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
+  border: none;
+  padding: 15px 0;
+}
+
+.inscription-label-legend {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.checkbox-list-wrapper li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscription-label-checkbox {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.inscription-input-checkbox {
+  /* margin-top: 10px;
+  vertical-align: top;
+  margin-right: 30px; */
 }
