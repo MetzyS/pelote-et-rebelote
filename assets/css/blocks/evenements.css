@@ -1,10 +1,7 @@
 @import url("../style.css");
 
-:root {
-  --event-title-color: #ff5500;
-}
-
-.test-wrapper {
+/***** Articles *****/
+.event-wrapper {
   display: flex;
   position: relative;
   overflow: hidden;
@@ -18,14 +15,13 @@
   height: 100%;
 }
 
-
 .event-next-block2 {
   position: absolute;
   background-color: var(--primary-color);
   text-align: center;
   width: 100%;
   height: 100%;
-  transform: translateX(9999px);
+  transform: translateX(100%);
 }
 
 .event-title-wrapper {
@@ -34,7 +30,7 @@
 
 .event-title,
 .event-date {
-  color: var(--event-title-color);
+  color: var(--secondary-color-intense);
   font-weight: 600;
   font-size: calc(var(--primary-title-s) * 0.75);
 }
@@ -57,6 +53,17 @@
   padding: 30px 0;
 }
 
+#event-img-noel {
+  display: block;
+  background-image: url(../../image/event-noel-img.png);
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  background-size: contain;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
 .event-pagination-wrapper {
   display: block;
   background-color: var(--primary-color);
@@ -66,16 +73,84 @@
   margin-bottom: 45px;
 }
 
+/***** Mobile prev&next bouttons *****/
 .pagination {
   display: flex;
   justify-content: space-around;
 }
 
 .previous-button {
-  transform: rotate(-180deg)
+  transform: rotate(-180deg);
 }
 
-/* Formulaire d'inscription */
+/***** Media queries Grid (wrapper & articles) *****/
+@media screen and (min-width: 768px) {
+  .event-wrapper {
+    display: block;
+    width: auto;
+    overflow: visible;
+  }
+
+  /* grid article 1 */
+  .event-next-block {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  #event-block-text2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #event-img-halloween {
+    grid-area: image1;
+  }
+  #event-title-article1 {
+    grid-area: title1;
+  }
+
+  /* grid article 2 */
+  .event-next-block2 {
+    display: grid;
+    position: relative;
+    text-align: center;
+    transform: translateX(0%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+      "title2 image2"
+      "text2 image2";
+  }
+  #event-title-article2 {
+    grid-area: title2;
+  }
+  .event-block-text {
+    display: flex;
+    flex-direction: column;
+    grid-area: text2;
+  }
+
+  #event-img-noel {
+    background-image: url(../../image/event-noel-img.png);
+    background-repeat: no-repeat;
+    grid-area: image2;
+    width: 100%;
+    height: 100%;
+  }
+  .event-img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto;
+    padding: 30px 0; */
+  }
+  .event-pagination-wrapper {
+    display: none;
+  }
+}
+
+/***** Formulaire d'inscription *****/
 .inscription-wrapper {
   display: flex;
   flex-direction: column;
@@ -91,13 +166,23 @@
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .inscription-title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--primary-title-s) * 0.75);
+    margin: 55px;
+  }
+}
+
 .inscription-label {
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .inscription-span {
-  color: var(--event-title-color);
+  color: var(--secondary-color-intense);
 }
 
 .inscription-input {
@@ -146,30 +231,6 @@
   flex-direction: column;
 }
 
-.submit-wrapper {
-  margin: 10px auto 40px auto;
-}
-
-.block-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.block-button button {
-  background-color: #ffae85;
-  /* height: 45px; */
-  flex-grow: 1;
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 12px;
-  border: none;
-  padding: 15px 0;
-}
-
 .inscription-label-legend {
   text-transform: uppercase;
   font-weight: 500;
@@ -198,4 +259,28 @@
 .inscription-label-checkbox span {
   font-style: italic;
   font-weight: 400;
+}
+
+/* Bouton submit */
+.submit-wrapper {
+  margin: 10px auto 40px auto;
+}
+
+.block-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-button button {
+  background-color: #ffae85;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+  padding: 15px 0;
 }
