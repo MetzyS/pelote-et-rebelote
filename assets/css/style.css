@@ -264,6 +264,7 @@ nav ul {
 #ham-menu:checked ~ .ham-menu-wrapper {
     transform: translateY(0px);
     visibility: visible;
+    z-index: 3;
 }
 
 
@@ -331,6 +332,20 @@ h2 {
     
 }
 
+@media screen and (min-width: 768px) {
+    .page-main-title::before {
+        content: "";
+        position: relative;
+        top: 10px;
+        display: inline-block;
+        width: 42px;
+        height: 44px;
+        margin-right: 10px;
+        background-image: url(../image/pelote-icon.svg);
+        background-repeat: no-repeat;
+    }
+}
+
 /* Footer */
 /* Footer top */
 .footer-top {
@@ -364,6 +379,7 @@ h2 {
     }
 
     .footer-nav-item {
+        min-width: 140px;
         padding: 0;
         box-shadow: none;   
     }
@@ -395,6 +411,26 @@ h2 {
 
 .social-link {
     display: flex;
+}
+
+/* Rejoindre list*/
+.rejoindre-list {
+    margin: 10px 0;
+}
+
+.rejoindre-list .rejoindre-link {
+    text-transform: none;
+    font-size: calc(var(--text-s) + 0.1em);
+    font-weight: normal;
+}
+
+/* Adresse block*/
+.footer-adresse-block {
+    margin: 10px 0;
+}
+
+.footer-adresse-block a {
+    text-transform: none;
 }
 
 @media screen and (min-width: 768px) {
