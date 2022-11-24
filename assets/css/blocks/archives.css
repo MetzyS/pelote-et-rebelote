@@ -87,7 +87,7 @@
 .article-title {
     position: relative;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--secondary-color-intense);
 }
 
 .article-title-date {
@@ -109,19 +109,19 @@
         position: sticky;
         top: 0;
         display: flex;
-        float: left;
+        align-self: flex-start;
         min-height: 300px;
-        margin-left: -135px;
+        margin-top: 20px;
+        margin-right: 20px;
     }
 
-    .archives-wrapper {
-        float: left;
-        min-width: 550px;
+    .archives-container {
+        display: flex;
     }
 
     .archives-block {
         min-width: 550px;
-        padding-bottom: 30px;
+        padding: 20px 20px 30px;
     }
 
     .archives-nav-block {
@@ -156,6 +156,7 @@
 
     .article-title {
         text-align: start;
+        padding-right: 40px;
     }
 
     .article-title::after {
