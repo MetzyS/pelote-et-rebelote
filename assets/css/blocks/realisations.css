@@ -26,24 +26,24 @@
 }
 
 @media screen and (min-width: 768px) {
-    .event-container {
+    .idee-container {
         display: flex;
         background-color: var(--primary-color);
     }
 }
 
 /* Article Event - Next*/
-.event-next {
+.article {
     background-color: var(--primary-color);
     text-align: center;
     padding: 21px;
 }
 
-.event-next-title {
+.article-title {
     font-size: calc(var(--secondary-title-s) - 0.6em);
     font-weight: 800;
     padding: 5px;
-    color: var(--secondary-color-intense);
+    color: black
 }
 
 .page-subtitle-description {
@@ -81,19 +81,20 @@
 
 
 
-.event-next-photo-accessoires,
-.event-next-photo-jouets,
-.event-next-photo-costumes {
+.photo-accessoires,
+.photo-jouets,
+.photo-costumes {
     width: 80%;
     height: 80%;
     padding: 5px;
 }
 
 
-.event-next-photo-asso {
+.photo-echarpe {
     width: 90%;
     height: 90%;
     padding: 5px;
+    ;
 
 }
 
@@ -105,7 +106,7 @@
         align-items: center;
     }
 
-    .equipe {
+    .categories {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -115,11 +116,12 @@
     }
 
     .trait {
-        width: 600px;
+        width: 500px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10%;
     }
 
     .button {
@@ -143,19 +145,19 @@
 
 
 
-    .event-next {
+    .article {
         display: flex;
         flex-direction: column;
         justify-items: center;
     }
 
 
-    .event-next-photo-asso {
+    .photo-echarpe {
         width: 65%;
         height: 65%;
     }
 
-    .event-next-title {
+    .article-title {
         padding: 0;
     }
 
@@ -163,14 +165,16 @@
         margin-top: 5px;
     }
 
-    .article-historique {
+    .article-echarpe {
         display: flex;
         flex-direction: row;
 
     }
 
-    .event-next-texte {
+    .article-texte {
         justify-content: left;
+
+
     }
 
 
@@ -185,20 +189,14 @@
         margin-bottom: 8%;
     }
 
-    .event-next-photo-accessoires,
-    .event-next-photo-jouets,
-    .event-next-photo-costumes {
-        width: 60%;
-        height: 60%;
-        padding: 5px;
-    }
+  
 
-    .event-next-photo-asso {
+    .photo-echarpe {
         width: 90%;
         height: 90%;
     }
 
-    .event-next-texte {
+    .article-texte {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -226,77 +224,8 @@
     .article-title {
         font-size: var(--primary-title-s);
     }
-
-    .event-next-photo {
-        height: 80%;
-        width: 80%;
-    }
 }
 
-
-/* Event List */
-.event-list-item a {
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-    padding: 10px;
-}
-
-.event-list-item {
-    border-bottom: 1px solid var(--primary-color);
-}
-
-/* Tableau Planning */
-
-.planning-table-container {
-    overflow-x: scroll;
-    margin-bottom: 100px;
-}
-
-.planning-table {
-    table-layout: fixed;
-    border: 1px solid black;
-    border-collapse: collapse;
-    min-width: 520px;
-    width: 520px;
-}
-
-.planning-table td {
-    height: 20px;
-    text-align: center;
-    border: 1px solid black;
-}
-
-.planning-table thead td,
-.planning-table .table-time {
-    text-align: start;
-}
-
-.planning-table-couture {
-    background-color: #d9d2e9;
-}
-
-.planning-table-enfant,
-.planning-table-bebe {
-    background-color: #cfe2f3;
-}
-
-.planning-table-tricot {
-    background-color: #ead1dc;
-}
-
-@media screen and (min-width: 768px) {
-    .planning-table-container {
-        display: flex;
-        overflow: auto;
-        margin-bottom: 100px;
-    }
-
-    .planning-table {
-        flex-grow: 1;
-    }
-}
-
-.equipe {
+.categories {
     text-align: center;
 }
