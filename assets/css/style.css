@@ -8,6 +8,7 @@
     --primary-title-s: 24px;
     --secondary-title-s: 22px;
     --text-s: 12px;
+    --shadow: 5px 5px 5px rgba(0, 0, 0, 15%);
 }
 
 * {
