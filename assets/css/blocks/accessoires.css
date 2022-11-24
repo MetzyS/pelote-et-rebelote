@@ -1,1 +1,152 @@
 @import url("../style.css");
+
+* {
+    list-style: none;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.accessoire {
+    margin-bottom: 20px;
+}
+
+.accessoire__top {
+    padding: 1px 10px;
+}
+
+.accessoire__describtion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 150px;
+    text-align: center;
+}
+.accessoire__describtion h1 {
+    margin: 20px 0;
+}
+
+.photo {
+    margin-bottom: 20px;
+}
+
+.photo__wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+  
+.photo__controls {
+    /* overflow: scroll; */
+}
+
+.photo__image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#image-item1-2,
+#image-item1-3,
+#image-item1-4,
+#image-item1-5,
+#image-item1-6,
+#image-item2-2,
+#image-item2-3,
+#image-item2-4,
+#image-item2-5,
+#image-item2-6  {
+    position: absolute;
+}
+
+#image-item1-2,
+#image-item2-2 {
+    transform: translate(100%);
+}
+#image-item1-3,
+#image-item2-3 {
+    transform: translate(200%);
+}
+#image-item1-4,
+#image-item2-4 {
+    transform: translate(300%);
+}
+#image-item1-5,
+#image-item2-5 {
+    transform: translate(400%);
+}
+#image-item1-6,
+#image-item2-6 {
+    transform: translate(500%);
+}
+
+.photo__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.controls__list {
+    display: flex;
+    gap: 1%;
+    margin: 1%;
+}
+
+.controls__link {
+    display: inline-block;
+}
+
+.controls__image {
+    width: 100%;
+    height: 100%;
+}
+
+.accessoire__video {
+    position: relative;
+}
+
+.video__wrapper {
+    padding: 10px;
+    margin: 10px;
+}
+
+.video__content {
+    width: 100%;
+    height: 100%;
+}
+
+.video__playpause {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+}
+
+.video__playpause::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 3px);
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left:15px solid #000; 
+}
+
+.accessoire__tutoriel {
+    padding: 10px;
+}
+
+.tutoriel__title {
+    text-align: center;
+}
