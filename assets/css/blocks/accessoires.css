@@ -4,27 +4,36 @@
     list-style: none;
 }
 
-.breadcrumb {
-    display: none;
-}
-
 .accessoire {
+    padding: 10px 10px 20px;
     margin-bottom: 20px;
 }
 
-.accessoire__top {
-    padding: 1px 10px;
+.accessoire:nth-of-type(odd) {
+    background-color: var(--primary-color);
 }
 
 .accessoire__describtion {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    max-width: 80%;
     min-height: 150px;
     text-align: center;
+    margin: 0 auto;
 }
-.accessoire__describtion h1 {
-    margin: 20px 0;
+.accessoire__describtion h2 {
+    margin: 20px 0 0;
+}
+
+.describtion__technique {
+    font-style: italic;
+    color: var(--primary-color-dark);
+    margin-bottom: 20px;
+}
+
+.describtion__resume {
+    font-style: italic;
 }
 
 .photo {
@@ -39,7 +48,7 @@
 }
   
 .photo__controls {
-    /* overflow: scroll; */
+    overflow: scroll;
 }
 
 .photo__image {
@@ -143,10 +152,94 @@
     border-left:15px solid #000; 
 }
 
-.accessoire__tutoriel {
-    padding: 10px;
-}
-
 .tutoriel__title {
     text-align: center;
+    margin: 20px 0;
+}
+
+.tutoriel__subtitle {
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    /* .accessoires {
+        padding-top: 10px;
+    }  */
+    .accessoire {
+        padding: 30px;
+    }
+    .breadcrumb {
+        display: flex;
+        margin: 10px 0;
+    }
+    .breadcrumb__item {
+        position: relative;
+        margin-right: 20px;
+    }
+    .breadcrumb__item::after {
+        content: ">";
+        position: absolute;
+        right: 0;
+        display: inline;
+        margin-right: -15px;
+    }
+
+    .breadcrumb__item:last-of-type {
+        margin-right: 0;
+    }
+    .breadcrumb__item:last-of-type::after {
+        display: none;
+    }
+    .breadcrumb__link {
+        text-decoration: none;
+        font-weight: 500;
+        color: #000;
+    }
+    .breadcrumb__link--active {
+        color: var(--primary-color-dark);
+    }
+    .accessoire__top {
+        position: relative;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    .accessoire__top::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        display: block;
+        width: 80%;
+        height: 1px;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--primary-color-dark);
+    }
+    .accessoire__photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        order: -1;
+    }
+    .accessoire__describtion {
+        text-align: left;
+    }
+    .accessoire__describtion h2 {
+        margin: 0;
+    }
+    .accessoire__bot {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .video__wrapper {
+        padding: 0;
+        margin: 0;
+    }
+    .accessoire__tutoriel {
+        max-width: 50%;
+    }
+    .tutoriel__title {
+        text-align: left;
+    }
 }
