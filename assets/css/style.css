@@ -325,7 +325,7 @@ h2 {
 }
 
 .event-next-title-description {
-    font-size: calc(var(--secondary-title-s) / );
+    font-size: calc(var(--secondary-title-s)  );
     font-weight: 600;
     font-style: italic;
     color: var(--secondary-color);

@@ -7,6 +7,8 @@
 
 }
 
+
+
 .event-date {
     font-size: calc(var(--text-s) - 0.2em);
     font-weight: 300;
@@ -18,8 +20,9 @@
     list-style: none;
 }
 
-.event-next-title-description{
+.event-next-title-description {
     font-size: 12px;
+    color: var(--secondary-color-intense);
 }
 
 @media screen and (min-width: 768px) {
@@ -40,29 +43,36 @@
     font-size: calc(var(--secondary-title-s) - 0.6em);
     font-weight: 800;
     padding: 5px;
+    color: var(--secondary-color-intense);
 }
-.page-subtitle-description{
+
+.page-subtitle-description {
     font-style: italic;
+    font-weight: 800;
 }
+
 .article-title {
     font-size: calc(var(--secondary-title-s) - 0.6em);
     font-weight: 800;
     display: flex;
     justify-content: center;
-    
+
 }
+
 .article-description {
     font-size: calc(var(--secondary-title-s) - 0.6em);
     font-style: italic;
     padding: 5px;
 }
+
 .second-article-title {
     font-size: calc(var(--secondary-title-s) - 0.6em);
     font-weight: 800;
     display: flex;
     justify-content: center;
-    
+
 }
+
 .second-article-description {
     font-size: calc(var(--secondary-title-s) - 0.6em);
     font-style: italic;
@@ -71,7 +81,9 @@
 
 
 
-.event-next-photo-adele, .event-next-photo-karim {
+.event-next-photo-accessoires,
+.event-next-photo-jouets,
+.event-next-photo-costumes {
     width: 80%;
     height: 80%;
     padding: 5px;
@@ -82,41 +94,67 @@
     width: 90%;
     height: 90%;
     padding: 5px;
+
 }
 
 
 @media screen and (min-width: 768px) {
-    
+    .texte-et-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .equipe {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding-bottom: 100px;
-      
-        
+
+
     }
+
     .trait {
-    width:300px;
-    border: 1px solid grey;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-   
-    
+        width: 600px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .button {
+        display: flex;
+        font-weight: 600;
+        font-size: var(--text-s);
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+        background-color: var(--secondary-color);
+        text-decoration: none;
+        justify-content: center;
+        margin: 7%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 15%);
+        min-width: 127px;
+        min-height: 26px;
+        color: #000;
+
+
+    }
+
+
 
     .event-next {
         display: flex;
         flex-direction: column;
         justify-items: center;
     }
-   
-   
-    .event-next-photo-asso{
-        width: 80%;
-        height: 80%;
+
+
+    .event-next-photo-asso {
+        width: 65%;
+        height: 65%;
     }
+
     .event-next-title {
         padding: 0;
     }
@@ -125,29 +163,42 @@
         margin-top: 5px;
     }
 
-   .article-historique{
-    display: flex;
-    flex-direction: row;    
+    .article-historique {
+        display: flex;
+        flex-direction: row;
 
-   }
-   .event-next-texte{
-    justify-content: left;
-   }
-   
-  
-   
+    }
+
+    .event-next-texte {
+        justify-content: left;
+    }
+
+
+
 }
+
 @media screen and (max-width: 768px) {
-    .event-next-texte-deux {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        overflow: hidden;
-        }
-    .event-next-title-description{
+
+    .Accessoires,
+    .Jouets,
+    .Costumes {
+        margin-bottom: 8%;
+    }
+
+    .event-next-photo-accessoires,
+    .event-next-photo-jouets,
+    .event-next-photo-costumes {
+        width: 60%;
+        height: 60%;
+        padding: 5px;
+    }
+
+    .event-next-photo-asso {
+        width: 90%;
+        height: 90%;
+    }
+
+    .event-next-texte {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -156,7 +207,32 @@
         padding: 0;
         overflow: hidden;
     }
+
+    .button {
+        display: block;
+        font-weight: 600;
+        font-size: var(--secondary-title-s);
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        background-color: var(--secondary-color);
+        border-radius: 3px;
+        text-decoration: none;
+        color: #000;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 15%);
+
+    }
+
+    .article-title {
+        font-size: var(--primary-title-s);
+    }
+
+    .event-next-photo {
+        height: 80%;
+        width: 80%;
+    }
 }
+
 
 /* Event List */
 .event-list-item a {
@@ -221,6 +297,6 @@
     }
 }
 
-.equipe{
+.equipe {
     text-align: center;
 }
