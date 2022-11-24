@@ -2,249 +2,289 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/blocks/evenements.css">
-    <title>Evenements - À venir</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/blocks/evenements.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <title>Evenements - À venir</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-top grid">
-            <div class="header-top-wrapper">
-                <a class="header-top-logo" href="../index.html">
-                    <picture class="header-top-logo-versions">
-                        <source class="header-top-logo" media="(min-width: 768px)"
-                            srcset="../assets/image/logo_full.svg">
-                        <source class="header-top-logo" media="(max-width: 768px)"
-                            srcset="../assets/image/logo-letters-inter.svg">
-                        <img class="header-top-logo" src="../assets/image/logo-letters-inter.svg"
-                            alt="Logo - Pelotes et Rebelote" width="300" height="42">
-                    </picture>
-                </a>
-                <nav>
-                    <input class="none" type="checkbox" id="ham-menu">
-                    <label class="ham-menu-button" for="ham-menu">
-                        <div class="ham-menu-icon"></div>
-                    </label>
-                    <div class="ham-menu-wrapper">
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Infos</a>
-                                <ul class="nav-list-wrapper">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">L'association</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Contact</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Realisations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Evenements</a>
-                                <ul class="nav-list-wrapper">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">À venir</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="archives.html" class="nav-link">Archives</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+  <header>
+    <div class="header-top grid">
+      <div class="header-top-wrapper">
+        <a class="header-top-logo" href="../index.html">
+          <picture class="header-top-logo-versions">
+            <source class="header-top-logo" media="(min-width: 768px)" srcset="../assets/image/logo_full.svg" />
+            <source class="header-top-logo" media="(max-width: 768px)"
+              srcset="../assets/image/logo-letters-inter.svg" />
+            <img class="header-top-logo" src="../assets/image/logo-letters-inter.svg" alt="Logo - Pelotes et Rebelote"
+              width="300" height="42" />
+          </picture>
+        </a>
+        <nav>
+          <input class="none" type="checkbox" id="ham-menu" />
+          <label class="ham-menu-button" for="ham-menu">
+            <span class="ham-menu-icon"></span>
+          </label>
+          <div class="ham-menu-wrapper">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Infos</a>
+                <ul class="nav-list-wrapper">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">L'association</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Realisations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Evenements</a>
+                <ul class="nav-list-wrapper">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">À venir</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="archives.html" class="nav-link">Archives</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="header-bot">
+      <img class="banner" src="../assets/image/banner-bg.jpg" width="1440" height="234" alt="header-banner" />
+    </div>
+  </header>
+  <main class="page-main grid">
+    <h1 class="page-main-title">Évenements</h1>
+    <section class="event-page-block">
+      <h2 class="visibility-hidden">Évenements</h2>
+      <!-- pour w3c -->
+      <div class="page-main-subtitle">
+        <h2>À venir</h2>
+        <span class="page-subtitle-description">Informations et pré-inscriptions pour les prochains
+          événementns.</span>
+      </div>
+      <div class="event-wrapper">
+        <article class="event-next-block" id="article1">
+          <div class="event-title-wrapper1" id="title-article1">
+            <h1 class="event-title" id="event-title-article1">
+              Atelier Costume Halloween
+            </h1>
+            <span class="event-date" id="event-date1">du 24/10/2022 au 30/10/2022</span>
+            <div class="event-title-icon1"></div>
+          </div>
+          <div class="event-block-text" id="event-block-text1">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type.
+            </p>
+            <br />
+            <p>
+              It has survived not only five centuries, simply dummy text of
+              the printing and typesetting industry.
+            </p>
+            <p>
+              When an unknown printer took a galley of type and scrambled it
+              to make a type specimen book. Lorem Ipsum is simply dummy text
+              of the printing and typesetting industry.
+            </p>
+            <a href="#inscription-form-link" class="button desktop-visible button-article">S'inscrire</a>
+          </div>
+          <div class="image-container" id="event-img-halloween"></div>
+        </article>
+        <article class="event-next-block2" id="article2">
+          <div class="event-title-wrapper2" id="title-article2">
+            <h1 class="event-title" id="event-title-article2">
+              Atelier Créations de Noël
+            </h1>
+            <span class="event-date" id="event-date2">du 05/12/2022 au 23/12/2022</span>
+            <div class="event-title-icon2"></div>
+          </div>
+          <div class="event-block-text" id="event-block-text2">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type.
+            </p>
+            <br />
+            <p>
+              It has survived not only five centuries, simply dummy text of
+              the printing and typesetting industry.
+            </p>
+            <p>
+              When an unknown printer took a galley of type and scrambled it
+              to make a type specimen book. Lorem Ipsum is simply dummy text
+              of the printing and typesetting industry.
+            </p>
+            <a href="#inscription-form-link" class="button desktop-visible button-article">S'inscrire</a>
+          </div>
+          <div class="image-container" id="event-img-noel"></div>
+        </article>
+      </div>
+      <div class="event-pagination-wrapper">
+        <div class="pagination">
+          <a href="#article1"><img src="../assets/image/next-button.svg" alt="previous-button" width="50"
+              class="previous-button" /></a><a href="#article2"><img src="../assets/image/next-button.svg"
+              alt="next-button" width="50" /></a>
         </div>
-        <div class="header-bot">
-            <img class="banner" src="../assets/image/banner-bg.jpg" width="1440" height="234" alt="Header banner" />
-        </div>
-    </header>
-    <main class="page-main grid">
-        <h1 class="page-main-title">Évenements</h1>
-        <section class="event-page-block">
-            <div class="page-main-subtitle">
-                <h2>À venir</h2>
-                <span class="page-subtitle-description">Informations et pré-inscriptions pour les prochains
-                    événementns.</span>
-            </div>
-            <div class="test-wrapper">
-                <article class="event-next-block" id="article1">
-                    <div class="event-title-wrapper">
-                        <h1 class="event-title">Atelier Costume Halloween</h1>
-                        <span class="event-date">du 24/10/2022 au 30/10/2022</span>
-                    </div>
-                    <div class="event-block-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of
-                            type and scrambled it to make a type.</p><br>
-                        <p>It has survived not only five centuries, simply dummy text of the printing and typesetting
-                            industry. </p>
-                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                        <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <img class="event-img" src="../assets/image/event-pumpkin-img.png" width="319" height="221"
-                            alt="Photo de création de noel" />
-                    </div>
-                </article>
-                <article class="event-next-block2" id="article2">
-                    <div class="event-title-wrapper">
-                        <h1 class="event-title">Atelier Créations de Noël</h1>
-                        <span class="event-date">du 05/12/2022 au 23/12/2022</span>
-                    </div>
-                    <div class="event-block-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of
-                            type and scrambled it to make a type.</p><br>
-                        <p>It has survived not only five centuries, simply dummy text of the printing and typesetting
-                            industry. </p>
-                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                        <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <img class="event-img" src="../assets/image/event-noel-img.png" width="319" height="221"
-                            alt="Photo de création de noel" />
-                    </div>
-                </article>
-            </div>
-            <div class="event-pagination-wrapper">
-                <div class="pagination">
-                    <a href="#article1"><img src="../assets/image/next-button.svg" alt="previous-button" width="50px"
-                            class="previous-button"></a><a href="#article2"><img src="../assets/image/next-button.svg"
-                            alt="next-button" width="50px"></a>
-                </div>
-            </div>
-        </section>
-        <section class="inscription">
-            <div class="inscription-wrapper">
-                <span class="inscription-title">Pré-inscription</span>
-                <form action="">
-                    <div class="input-wrapper">
-                        <label for="inscription-last-name" class="inscription-label">Votre Nom <span
-                                class="inscription-span">(obligatoire)</span></label>
-                        <input type="text" name="inscription-last-name" id="inscription-last-name"
-                            class="inscription-input" placeholder="Votre nom..." required>
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="inscription-first-name" class="inscription-label">Votre Prenom <span
-                                class="inscription-span">(obligatoire)</span></label>
-                        <input type="text" name="inscription-first-name" id="inscription-first-name"
-                            class="inscription-input" placeholder="Votre prenom..." required>
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="inscription-email" class="inscription-label">Votre Email <span
-                                class="inscription-span">(obligatoire)</span></label>
-                        <input type="email" name="inscription-email" id="inscription-email" class="inscription-input"
-                            placeholder="Votre email..." required>
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="inscription-phone" class="inscription-label">Votre téléphone <span
-                                class="inscription-span">(obligatoire)</span></label>
-                        <input type="phone" name="inscription-phone" id="inscription-phone" class="inscription-input"
-                            placeholder="Votre téléphone..." required>
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="inscription-message" class="inscription-label">Votre message <span
-                                class="inscription-span">(1200 caracteres max)</span></label>
-                        <textarea name="inscription-message" id="inscription-message" cols="30" rows="10"
-                            class="inscription-message" placeholder="Votre message..." maxlength="1200"
-                            required></textarea>
-                    </div>
-                    <div class="checkbox-wrapper">
-                        <legend class="inscription-label-legend">Votre téléphone <span class="inscription-span">(1
-                                minimum)</span></legend>
+      </div>
+    </section>
+    <section class="inscription">
+      <h2 class="visibility-hidden">Inscription</h2>
+      <!-- pour w3c -->
+      <div class="inscription-wrapper" id="inscription-form-link">
+        <span class="inscription-title">Pré-inscription</span>
+        <form action="@">
+          <div class="input-wrapper">
+            <label for="inscription-last-name" class="inscription-label">Votre Nom
+              <span class="inscription-span">(obligatoire)</span></label>
+            <input type="text" name="inscription-last-name" id="inscription-last-name" class="inscription-input"
+              placeholder="Votre nom..." required />
+          </div>
+          <div class="input-wrapper">
+            <label for="inscription-first-name" class="inscription-label">Votre Prenom
+              <span class="inscription-span">(obligatoire)</span></label>
+            <input type="text" name="inscription-first-name" id="inscription-first-name" class="inscription-input"
+              placeholder="Votre prenom..." required />
+          </div>
+          <div class="input-wrapper">
+            <label for="inscription-email" class="inscription-label">Votre Email
+              <span class="inscription-span">(obligatoire)</span></label>
+            <input type="email" name="inscription-email" id="inscription-email" class="inscription-input"
+              placeholder="Votre email..." required />
+          </div>
+          <div class="input-wrapper">
+            <label for="inscription-phone" class="inscription-label">Votre téléphone
+              <span class="inscription-span">(obligatoire)</span></label>
+            <input type="tel" name="inscription-phone" id="inscription-phone" class="inscription-input"
+              placeholder="Votre téléphone..." required />
+          </div>
+          <div class="input-wrapper input-wrapper-full">
+            <label for="inscription-message" class="inscription-label">Votre message
+              <span class="inscription-span">(1200 caracteres max)</span></label>
+            <textarea name="inscription-message" id="inscription-message" cols="30" rows="10"
+              class="inscription-message" placeholder="Votre message..." maxlength="1200" required></textarea>
+          </div>
+          <div class="checkbox-wrapper">
 
-                        <div class="checkbox-list-wrapper">
-                            <ul>
-                                <li><input type="checkbox" name="inscription-checkbox-halloween"
-                                        id="inscription-checkbox-halloween" class="inscription-input-checkbox">
-                                    <label for="inscription-checkbox-halloween"
-                                        class="inscription-label-checkbox">Atelier costume
-                                        halloween <br><span>du 24/10/22<br>au 30/10/22</span></label>
-                                </li>
-                                <li><input type="checkbox" name="inscription-checkbox-noel"
-                                        id="inscription-checkbox-noel" class="inscription-input-checkbox">
-                                    <label for="inscription-checkbox-noel" class="inscription-label-checkbox">Atelier
-                                        création de Noël<br><span>du 05/12/22<br>au 23/12/22</span></label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="submit-wrapper">
-                        <div class="block-button"><button type="submit" class="button">Valider la
-                                pre-inscription</button></div>
-                    </div>
-                </form>
+            <div class="checkbox-list-wrapper">
+              <p class="inscription-label">VEUILLEZ COCHER L’ÉVÉNEMENT AUQUEL VOUS SOUHAITEZ PARTICIPER <span
+                  class="inscription-span">(1
+                  MINIMUM)</span></p>
+              <ul>
+                <li>
+                  <input type="checkbox" name="inscription-checkbox-halloween" id="inscription-checkbox-halloween"
+                    class="inscription-input-checkbox" />
+                  <label for="inscription-checkbox-halloween" class="inscription-label-checkbox">Atelier costume
+                    halloween <br /><span>du 24/10/22<br />au 30/10/22</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="inscription-checkbox-noel" id="inscription-checkbox-noel"
+                    class="inscription-input-checkbox" />
+                  <label for="inscription-checkbox-noel" class="inscription-label-checkbox">Atelier création de
+                    Noël<br /><span>du 05/12/22<br />au 23/12/22</span></label>
+                </li>
+              </ul>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-top grid">
-            <section>
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-item rejoindre">
-                        <a href="#" class="footer-nav-link">Nous Rejoindre</a>
-                        <ul class="rejoindre-list desktop-visible">
-                            <li class="rejoindre-item">
-                                <a href="#" class="rejoindre-link">Qui sommes-nous</a>
-                            </li>
-                            <li class="rejoindre-item">
-                                <a href="#" class="rejoindre-link">L'Équipe</a>
-                            </li>
-                            <li class="rejoindre-item">
-                                <a href="#" class="rejoindre-link">Bénévolat</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">Mentions Légales</a>
-                    </li>
-                    <li class="footer-nav-item footer-adresse">
-                        <a href="#" class="footer-nav-link">Pelotes et Rebelote</a>
-                        <div class="footer-adresse-block desktop-visible">
-                            <p>Association de loi 1901<br>
-                                1 RUE DES PINTADES<br>
-                                34000 MONTPELLIER</p>
-                            <a href="tel:+33400000000">04.00.00.00.00</a>
-                            <a href="mailto:contact@peloterebelote.org">contact@peloterebelote.org</a>
-                        </div>
-                    </li>
-                </ul>
+          </div>
+          <div class="submit-wrapper">
+            <div class="block-button">
+              <button type="submit" class="button">
+                Valider la pre-inscription
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top grid">
+      <section>
+        <h2 class="visibility-hidden">Footer</h2>
+        <!-- pour w3c -->
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item rejoindre">
+            <a href="#" class="footer-nav-link">Nous Rejoindre</a>
+            <ul class="rejoindre-list desktop-visible">
+              <li class="rejoindre-item">
+                <a href="#" class="rejoindre-link">Qui sommes-nous</a>
+              </li>
+              <li class="rejoindre-item">
+                <a href="#" class="rejoindre-link">L'Équipe</a>
+              </li>
+              <li class="rejoindre-item">
+                <a href="#" class="rejoindre-link">Bénévolat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Mentions Légales</a>
+          </li>
+          <li class="footer-nav-item footer-adresse">
+            <a href="#" class="footer-nav-link">Pelotes et Rebelote</a>
+            <div class="footer-adresse-block desktop-visible">
+              <p>
+                Association de loi 1901<br />
+                1 RUE DES PINTADES<br />
+                34000 MONTPELLIER
+              </p>
+              <a href="tel:+33400000000">04.00.00.00.00</a>
+              <a href="mailto:contact@peloterebelote.org">contact@peloterebelote.org</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bot grid">
+      <section>
+        <h2 class="visibility-hidden">Footer-grid</h2>
+        <!-- pour w3c -->
+        <ul class="social-list">
+          <li class="social-item fb">
+            <a href="#" class="social-link">
+              <img src="../assets/image/icon-fb.svg" alt="icon fb" /></a>
+          </li>
+          <li class="social-item insta">
+            <a href="#" class="social-link">
+              <img src="../assets/image/icon-insta.svg" alt="icon insta" /></a>
+          </li>
+          <li class="social-item twitter">
+            <a href="#" class="social-link">
+              <img src="../assets/image/icon-twitter.svg" alt="icon twitter" /></a>
+          </li>
+        </ul>
+        <div class="footer-copyright desktop-visible">
+          <p>PELOTES ET REBELOTES COPYRIGHT © 2022 - TOUS DROITS RÉSÉRVES.</p>
         </div>
-        <div class="footer-bot grid">
-            <section>
-                <ul class="social-list">
-                    <li class="social-item fb">
-                        <a href="#" class="social-link"> <img src="../assets/image/icon-fb.svg" alt="icon fb"></a>
-                    </li>
-                    <li class="social-item insta">
-                        <a href="#" class="social-link"> <img src="../assets/image/icon-insta.svg" alt="icon insta"></a>
-                    </li>
-                    <li class="social-item twitter">
-                        <a href="#" class="social-link"> <img src="../assets/image/icon-twitter.svg"
-                                alt="icon twitter"></a>
-                    </li>
-                </ul>
-                <div class="footer-copyright desktop-visible">
-                    <p>PELOTES ET REBELOTES COPYRIGHT © 2022 - TOUS DROITS RÉSÉRVES.</p>
-                </div>
-                <a class="footer-logo desktop-visible" href="#">
-                    <img src="../assets/image/logo_half.svg" width="41" height="43"
-                        alt="Footer logo - Pelotes et Rebelote">
-                </a>
-            </section>
-        </div>
-    </footer>
+        <a class="footer-logo desktop-visible" href="#">
+          <img src="../assets/image/logo_half.svg" width="41" height="43" alt="Footer logo - Pelotes et Rebelote" />
+        </a>
+      </section>
+    </div>
+  </footer>
 </body>
 
 </html>
