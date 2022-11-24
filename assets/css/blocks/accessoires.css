@@ -1,5 +1,35 @@
 @import url("../style.css");
 
+.header-top-logo {
+    width: 100%;
+    max-width: 280px;
+}
+.header-top-logo-d{
+    display: none;
+}
+
+.font-svg {
+    font-size: 1.9em;
+}
+
+@media screen and (min-width: 768px) {
+    .header-top-logo-m{
+        display: none;
+    }
+    .header-top-logo-d{
+        display: block;
+    }
+    .header-top-logo-d .cls-1 {
+        fill: #f9874e;
+    }
+    .header-top-logo-d .cls-2 {
+        fill: #ffce6f;
+    }
+    .font-svg {
+        font-size: medium;
+    }
+}
+
 * {
     list-style: none;
 }
