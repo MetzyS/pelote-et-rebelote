@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -43,6 +44,19 @@ body {
   border: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .clearfix::after {
@@ -75,23 +89,23 @@ figcaption {
     grid-column-start: span 3;
   }
 
-  .grid section:nth-of-type(1) {
+  .grid__section:nth-of-type(1) {
     grid-area: 2 / 2 / 2 / 3;
   }
 
-  .grid section:nth-of-type(2) {
+  .grid__section:nth-of-type(2) {
     grid-area: 3 / 2 / 3 / 3;
   }
 
-  .grid section:nth-of-type(3) {
+  .grid__section:nth-of-type(3) {
     grid-area: 4 / 2 / 4 / 3;
   }
 
-  .grid section:nth-of-type(4) {
+  .grid__section:nth-of-type(4) {
     grid-area: 5 / 2 / 5 / 3;
   }
 
-  .grid section:nth-of-type(5) {
+  .grid__section:nth-of-type(5) {
     grid-area: 6 / 2 / 6 / 3;
   }
 }
@@ -108,10 +122,18 @@ figcaption {
   justify-content: space-around;
 }
 
+/*Header logo*/
+
 .header-top-logo {
-  display: flex;
-  justify-content: center;
   width: 100%;
+  max-width: 280px;
+}
+.header-top-logo-d{
+  display: none;
+}
+
+.font-svg {
+  font-size: 1.9em;
 }
 
 @media screen and (min-width: 768px) {
@@ -121,8 +143,20 @@ figcaption {
     grid-area: 1 / 2 / 1 / 3;
   }
 
-  .header-top-logo {
-    justify-content: flex-start;
+  .header-top-logo-m{
+    display: none;
+  }
+  .header-top-logo-d{
+      display: block;
+  }
+  .header-top-logo-d .cls-1 {
+      fill: #f9874e;
+  }
+  .header-top-logo-d .cls-2 {
+      fill: #ffce6f;
+  }
+  .font-svg {
+      font-size: medium;
   }
 }
 
@@ -173,7 +207,6 @@ nav ul {
 
   .nav-link:hover,
   .nav-link:active {
-    font-weight: 600;
     background-color: var(--secondary-color);
   }
 
@@ -418,9 +451,18 @@ h2 {
 }
 
 .rejoindre-list .rejoindre-link {
+  position: relative;
   text-transform: none;
   font-size: calc(var(--text-s) + 0.1em);
   font-weight: normal;
+  padding-left: 10px;
+}
+
+.rejoindre-link::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  display: inline;
 }
 
 /* Adresse block*/
@@ -433,7 +475,7 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-bot section {
+  .footer-bot .grid__section {
     display: flex;
     justify-content: space-between;
     align-items: center;
