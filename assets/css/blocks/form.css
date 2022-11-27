@@ -1,0 +1,204 @@
+/* iOS input zoom disable */
+input,
+select,
+textarea {
+    font-size: 16pt;
+}
+
+input::placeholder {
+    font-size: var(--text-s);
+}
+
+textarea::placeholder {
+    font-size: var(--text-s);
+}
+
+/***** Formulaire d'inscription *****/
+.inscription-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription-title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--primary-title-s) * 0.75);
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .inscription-title {
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: calc(var(--primary-title-s) * 0.75);
+        margin: 55px;
+    }
+}
+
+.inscription-label {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto 20px;
+}
+
+.inscription-span {
+    color: var(--secondary-color-intense);
+}
+
+.inscription-input {
+    border: 1px solid #d9d9d9;
+    width: 90vw;
+    height: 35px;
+    margin: 10px auto 25px;
+    flex-grow: 1;
+    box-shadow: 0 0 2px var(--shadow);
+}
+
+.inscription-message {
+    border: 1px solid #d9d9d9;
+    width: 90vw;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    margin: 10px auto 25px;
+    resize: none;
+    outline: none;
+    box-shadow: 0 0 2px var(--shadow);
+}
+
+/* input color behaviour */
+.inscription-message:focus,
+.inscription-input:focus,
+.inscription-message:hover,
+.inscription-input:hover {
+    outline: 1px solid var(--primary-color-dark);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 50%);
+}
+
+.inscription-message:invalid:focus,
+.inscription-input:invalid:focus {
+    outline: 1px solid red;
+}
+
+.inscription-message:valid:focus,
+.inscription-input:valid:focus {
+    outline: 1px solid green;
+}
+
+.inscription-message::placeholder,
+.inscription-input::placeholder {
+    color: var(--primary-color);
+    font-family: Inter;
+    padding: 5px 15px;
+}
+
+/* input style & sizing */
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.inscription-label-legend {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.checkbox-list-wrapper ul {
+    margin: 30px 0 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.checkbox-list-wrapper li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.inscription-label-checkbox {
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0 20px;
+    font-size: var(--text-s);
+}
+
+.inscription-label-checkbox span {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Bouton submit */
+.submit-wrapper {
+    width: 95%;
+    margin: 10px auto 40px auto;
+}
+
+.block-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-button button {
+    background-color: #ffae85;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    padding: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .inscription-input,
+    .inscription-message {
+        width: auto;
+        margin: 15px 0;
+    }
+
+    .inscription-label {
+        margin: 10px 0 0px;
+    }
+
+    .input-wrapper {
+        width: 45%;
+    }
+
+    .input-wrapper-full {
+        width: 95%;
+        justify-self: center;
+    }
+
+    .checkbox-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .checkbox-list-wrapper li {
+        margin-left: 0;
+    }
+
+    .block-button button {
+        width: 80vw;
+    }
+}

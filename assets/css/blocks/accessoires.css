@@ -1,30 +1,36 @@
 @import url("../style.css");
 
-* {
-    list-style: none;
-}
-
-.breadcrumb {
-    display: none;
-}
-
 .accessoire {
+    padding: 10px 10px 20px;
     margin-bottom: 20px;
 }
 
-.accessoire__top {
-    padding: 1px 10px;
+.accessoire:nth-of-type(odd) {
+    background-color: var(--primary-color);
 }
 
 .accessoire__describtion {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    max-width: 80%;
     min-height: 150px;
     text-align: center;
+    margin: 0 auto;
 }
-.accessoire__describtion h1 {
-    margin: 20px 0;
+
+.accessoire__describtion h2 {
+    margin: 20px 0 0;
+}
+
+.describtion__technique {
+    font-style: italic;
+    color: var(--primary-color-dark);
+    margin-bottom: 20px;
+}
+
+.describtion__resume {
+    font-style: italic;
 }
 
 .photo {
@@ -37,10 +43,6 @@
     flex-wrap: wrap;
     position: relative;
 }
-  
-.photo__controls {
-    /* overflow: scroll; */
-}
 
 .photo__image {
     position: relative;
@@ -48,6 +50,12 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+}
+
+.photo__image img,
+.controls__image,
+.video__content {
+    box-shadow: var(--shadow);
 }
 
 #image-item1-2,
@@ -59,7 +67,7 @@
 #image-item2-3,
 #image-item2-4,
 #image-item2-5,
-#image-item2-6  {
+#image-item2-6 {
     position: absolute;
 }
 
@@ -67,18 +75,22 @@
 #image-item2-2 {
     transform: translate(100%);
 }
+
 #image-item1-3,
 #image-item2-3 {
     transform: translate(200%);
 }
+
 #image-item1-4,
 #image-item2-4 {
     transform: translate(300%);
 }
+
 #image-item1-5,
 #image-item2-5 {
     transform: translate(400%);
 }
+
 #image-item1-6,
 #image-item2-6 {
     transform: translate(500%);
@@ -104,11 +116,8 @@
     height: 100%;
 }
 
-.accessoire__video {
-    position: relative;
-}
-
 .video__wrapper {
+    position: relative;
     padding: 10px;
     margin: 10px;
 }
@@ -139,14 +148,117 @@
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent; 
-    border-left:15px solid #000; 
-}
-
-.accessoire__tutoriel {
-    padding: 10px;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #000;
 }
 
 .tutoriel__title {
     text-align: center;
+    margin: 20px 0;
+}
+
+.tutoriel__subtitle {
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    .accessoire {
+        padding: 30px;
+    }
+
+    .breadcrumb {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .breadcrumb__item {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .breadcrumb__item::after {
+        content: ">";
+        position: absolute;
+        right: 0;
+        display: inline;
+        margin-right: -15px;
+    }
+
+    .breadcrumb__item:last-of-type {
+        margin-right: 0;
+    }
+
+    .breadcrumb__item:last-of-type::after {
+        display: none;
+    }
+
+    .breadcrumb__link {
+        text-decoration: none;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .breadcrumb__link--active {
+        color: var(--primary-color-dark);
+    }
+
+    .accessoire__top {
+        position: relative;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .accessoire__top::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        display: block;
+        width: 80%;
+        height: 1px;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: var(--primary-color-dark);
+    }
+
+    .accessoire__photo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accessoire:nth-of-type(odd) .accessoire__photo {
+        order: -1;
+    }
+
+    .accessoire:nth-of-type(even) .accessoire__video {
+        order: 1;
+    }
+
+
+    .accessoire__describtion {
+        text-align: left;
+    }
+
+    .accessoire__describtion h2 {
+        margin: 0;
+    }
+
+    .accessoire__bot {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .video__wrapper {
+        padding: 0;
+        margin: 0;
+    }
+
+    .accessoire__tutoriel {
+        max-width: 50%;
+    }
+
+    .tutoriel__title {
+        text-align: left;
+    }
 }

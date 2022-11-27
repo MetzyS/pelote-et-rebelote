@@ -137,6 +137,9 @@
     .inner-nav-list {
         grid-template-columns: none;
     }
+    .inner-nav-item {
+        min-width: 71px;
+    }
 
     .inner-nav-link {
         justify-content: flex-start;

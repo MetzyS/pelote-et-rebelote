@@ -1,0 +1,154 @@
+@import url(../style.css);
+@import url(form.css);
+
+.visibility-hidden {
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .breadcrumb {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .breadcrumb__item {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .breadcrumb__item::after {
+        content: ">";
+        position: absolute;
+        right: 0;
+        display: inline;
+        margin-right: -15px;
+    }
+
+    .breadcrumb__item:last-of-type {
+        margin-right: 0;
+    }
+
+    .breadcrumb__item:last-of-type::after {
+        display: none;
+    }
+
+    .breadcrumb__link {
+        text-decoration: none;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .breadcrumb__link--active {
+        color: var(--primary-color-dark);
+    }
+}
+
+
+/* localization block */
+.contact-localization-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--text-s);
+    margin-bottom: 50px;
+}
+
+
+.contact-localization-wrapper {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-localization-wrapper {
+        background-color: var(--primary-color);
+        padding-bottom: 50px;
+        min-width: 700px;
+    }
+}
+
+.contact-localization-title {
+    margin: 15px 0 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: calc(var(--text-s) * 1.5);
+}
+
+.contact-localization-title:before {
+    content: "";
+    background-image: url(../../image/localization-icon.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: left;
+    padding-left: 20px;
+}
+
+/* localization map mobile */
+.contact-localization-map-m iframe {
+    border: none;
+    box-sizing: border-box;
+}
+
+/* localization map desktop */
+@media screen and (min-width: 768px) {
+    .contact-localization-map-m iframe {
+        display: none;
+        box-sizing: border-box;
+    }
+
+    .contact-localization-map-d iframe {
+        box-sizing: border-box;
+        border: none;
+        box-shadow: var(--shadow);
+    }
+}
+
+/* Contact section */
+
+hr {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    hr {
+        display: block;
+        border-top: 1px solid var(--primary-color);
+        width: 75%;
+        height: 1px;
+        margin: 0 auto 50px auto;
+    }
+}
+
+/* Title */
+.contact-title-m,
+.contact-title-d {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--primary-title-s) * 0.75);
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-title-m {
+        display: none;
+    }
+}
