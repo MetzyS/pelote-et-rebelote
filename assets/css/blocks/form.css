@@ -1,3 +1,18 @@
+/* iOS input zoom disable */
+input,
+select,
+textarea {
+    font-size: 16pt;
+}
+
+input::placeholder {
+    font-size: var(--text-s);
+}
+
+textarea::placeholder {
+    font-size: var(--text-s);
+}
+
 /***** Formulaire d'inscription *****/
 .inscription-wrapper {
     display: flex;

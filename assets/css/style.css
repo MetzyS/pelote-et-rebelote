@@ -30,6 +30,7 @@ body {
   text-align: center;
   background-color: var(--secondary-color);
   border-radius: 3px;
+  padding: 10px;
 }
 
 .none {
@@ -127,6 +128,7 @@ figcaption {
 .header-top-logo {
   width: 100%;
   max-width: 280px;
+  text-decoration: none;
 }
 
 .header-top-logo-d {
@@ -346,7 +348,10 @@ h1 {
 }
 
 .page-main-title {
+  display: flex;
   background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 30px 0;
 }
@@ -374,8 +379,6 @@ h2 {
 @media screen and (min-width: 768px) {
   .page-main-title::before {
     content: "";
-    position: relative;
-    top: 10px;
     display: inline-block;
     width: 42px;
     height: 44px;
