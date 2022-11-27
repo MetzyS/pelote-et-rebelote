@@ -1,4 +1,5 @@
 @import url(../style.css);
+@import url(form.css);
 
 .visibility-hidden {
     visibility: hidden;
@@ -53,5 +54,101 @@ ul {
 
     .breadcrumb__link--active {
         color: var(--primary-color-dark);
+    }
+}
+
+
+/* localization block */
+.contact-localization-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--text-s);
+    margin-bottom: 50px;
+}
+
+
+.contact-localization-wrapper {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-localization-wrapper {
+        background-color: var(--primary-color);
+        padding-bottom: 50px;
+        min-width: 700px;
+    }
+}
+
+.contact-localization-title {
+    margin: 15px 0 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: calc(var(--text-s) * 1.5);
+}
+
+.contact-localization-title:before {
+    content: "";
+    background-image: url(../../image/localization-icon.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: left;
+    padding-left: 20px;
+}
+
+/* localization map mobile */
+.contact-localization-map-m iframe {
+    border: none;
+    box-sizing: border-box;
+}
+
+/* localization map desktop */
+@media screen and (min-width: 768px) {
+    .contact-localization-map-m iframe {
+        display: none;
+        box-sizing: border-box;
+    }
+
+    .contact-localization-map-d iframe {
+        box-sizing: border-box;
+        border: none;
+        box-shadow: var(--shadow);
+    }
+}
+
+/* Contact section */
+
+hr {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    hr {
+        display: block;
+        border-top: 1px solid var(--primary-color);
+        width: 75%;
+        height: 1px;
+        margin: 0 auto 50px auto;
+    }
+}
+
+/* Title */
+.contact-title-m,
+.contact-title-d {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--primary-title-s) * 0.75);
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-title-m {
+        display: none;
     }
 }
