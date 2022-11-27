@@ -52,6 +52,12 @@
     height: 100%;
 }
 
+.photo__image img,
+.controls__image,
+.video__content {
+    box-shadow: var(--shadow);
+}
+
 #image-item1-2,
 #image-item1-3,
 #image-item1-4,
@@ -218,12 +224,16 @@
     .accessoire__photo {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-around; */
     }
 
-    .accessoire__photo:nth-of-type(odd) {
+    .accessoire:nth-of-type(odd) .accessoire__photo {
         order: -1;
     }
+
+    .accessoire:nth-of-type(even) .accessoire__video {
+        order: 1;
+    }
+
 
     .accessoire__describtion {
         text-align: left;
