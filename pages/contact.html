@@ -72,7 +72,7 @@
     </header>
     <main class="page-main grid">
         <h1 class="page-main-title">Infos</h1>
-        <section>
+        <section class="grid__section">
             <ul class="desktop-visible breadcrumb">
                 <li class="breadcrumb__item">
                     <a href="#" class="breadcrumb__link">Infos</a>
@@ -81,11 +81,98 @@
                     <a class="breadcrumb__link breadcrumb__link--active">Contact</a>
                 </li>
             </ul>
+            <h2 class="visibility-hidden">Contact</h2>
+            <!-- pour w3c -->
+            <div class="page-main-subtitle">
+                <h2>Contact</h2>
+                <span class="page-subtitle-description">Informations et formulaire de contact</span>
+            </div>
+            <article class="contact-localization-block">
+                <div class="contact-localization-wrapper">
+                    <div class="localization-icon">
+                    </div>
+                    <div class="contact-localization-text">
+                        <p class="contact-localization-title">PELOTE & REBELOTE</p>
+                        <p class="contact-localization-p">
+                            Association de loi 1901
+                        </p>
+                        <p>1 RUE DES PINTADES, 34000 MONTPELLIER</p>
+                        <p>04.00.00.00.00</p>
+                        <p>contact@peloterebelote.org</p>
+                        <br>
+                    </div>
+                    <div class="contact-localization-map-m">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.7964863785355!2d3.8887319158394305!3d43.61077886319013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af75e9982b11%3A0xc6dd43f58630d399!2sLyc%C3%A9e%20Jean%20Mermoz!5e0!3m2!1sfr!2sfr!4v1669548934580!5m2!1sfr!2sfr"
+                            width="300" height="350" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-localization-map-d desktop-visible">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.7964863785355!2d3.8887319158394305!3d43.61077886319013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af75e9982b11%3A0xc6dd43f58630d399!2sLyc%C3%A9e%20Jean%20Mermoz!5e0!3m2!1sfr!2sfr!4v1669548934580!5m2!1sfr!2sfr"
+                            width="600" height="500" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </article>
+            <hr class="desktop-visible-hr grid__section">
+        </section>
+        <section class="contact grid__section">
+            <h2 class="visibility-hidden">Formulaire de contact</h2>
+            <!-- pour w3c -->
+            <span class="contact-title-m">Contactez-nous</span>
+            <span class="contact-title-d desktop-visible
+            ">Une question, une remarque ? Contactez-nous via le formulaire ci-dessous.</span>
+            <div class="inscription-wrapper" id="inscription-form-link">
+                <span class="inscription-title">Pré-inscription</span>
+                <form action="@">
+                    <div class="input-wrapper">
+                        <label for="inscription-last-name" class="inscription-label">Votre Nom
+                            <span class="inscription-span">(obligatoire)</span></label>
+                        <input type="text" name="inscription-last-name" id="inscription-last-name"
+                            class="inscription-input" placeholder="Votre nom..." required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="inscription-first-name" class="inscription-label">Votre Prenom
+                            <span class="inscription-span">(obligatoire)</span></label>
+                        <input type="text" name="inscription-first-name" id="inscription-first-name"
+                            class="inscription-input" placeholder="Votre prenom..." required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="inscription-email" class="inscription-label">Votre Email
+                            <span class="inscription-span">(obligatoire)</span></label>
+                        <input type="email" name="inscription-email" id="inscription-email" class="inscription-input"
+                            placeholder="Votre email..." pattern="^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$"
+                            required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="inscription-phone" class="inscription-label">Votre téléphone
+                            <span class="inscription-span">(obligatoire)</span></label>
+                        <input type="tel" name="inscription-phone" id="inscription-phone" class="inscription-input"
+                            placeholder="Votre téléphone..." pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$"
+                            required />
+                    </div>
+                    <div class="input-wrapper input-wrapper-full">
+                        <label for="inscription-message" class="inscription-label">Votre message
+                            <span class="inscription-span">(1200 caracteres max)</span></label>
+                        <textarea name="inscription-message" id="inscription-message" cols="30" rows="10"
+                            class="inscription-message" placeholder="Votre message..." maxlength="1200"
+                            required></textarea>
+                    </div>
+                    <div class="submit-wrapper">
+                        <div class="block-button">
+                            <button type="submit" class="button">
+                                ENVOYER
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
         <div class="footer-top grid">
-            <section>
+            <section class="grid__section">
                 <h2 class="visibility-hidden">Footer</h2>
                 <!-- pour w3c -->
                 <ul class="footer-nav-list">
@@ -122,7 +209,7 @@
             </section>
         </div>
         <div class="footer-bot grid">
-            <section>
+            <section class="grid__section">
                 <h2 class="visibility-hidden">Footer-grid</h2>
                 <!-- pour w3c -->
                 <ul class="social-list">
