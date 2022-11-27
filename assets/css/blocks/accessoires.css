@@ -12,12 +12,13 @@
 .accessoire__describtion {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     max-width: 80%;
     min-height: 150px;
     text-align: center;
     margin: 0 auto;
 }
+
 .accessoire__describtion h2 {
     margin: 20px 0 0;
 }
@@ -42,10 +43,6 @@
     flex-wrap: wrap;
     position: relative;
 }
-  
-.photo__controls {
-    overflow: scroll;
-}
 
 .photo__image {
     position: relative;
@@ -64,7 +61,7 @@
 #image-item2-3,
 #image-item2-4,
 #image-item2-5,
-#image-item2-6  {
+#image-item2-6 {
     position: absolute;
 }
 
@@ -72,18 +69,22 @@
 #image-item2-2 {
     transform: translate(100%);
 }
+
 #image-item1-3,
 #image-item2-3 {
     transform: translate(200%);
 }
+
 #image-item1-4,
 #image-item2-4 {
     transform: translate(300%);
 }
+
 #image-item1-5,
 #image-item2-5 {
     transform: translate(400%);
 }
+
 #image-item1-6,
 #image-item2-6 {
     transform: translate(500%);
@@ -141,8 +142,8 @@
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent; 
-    border-left:15px solid #000; 
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #000;
 }
 
 .tutoriel__title {
@@ -158,14 +159,17 @@
     .accessoire {
         padding: 30px;
     }
+
     .breadcrumb {
         display: flex;
         margin: 10px 0;
     }
+
     .breadcrumb__item {
         position: relative;
         margin-right: 20px;
     }
+
     .breadcrumb__item::after {
         content: ">";
         position: absolute;
@@ -177,23 +181,28 @@
     .breadcrumb__item:last-of-type {
         margin-right: 0;
     }
+
     .breadcrumb__item:last-of-type::after {
         display: none;
     }
+
     .breadcrumb__link {
         text-decoration: none;
         font-weight: 500;
         color: #000;
     }
+
     .breadcrumb__link--active {
         color: var(--primary-color-dark);
     }
+
     .accessoire__top {
         position: relative;
         display: flex;
         gap: 50px;
         margin-bottom: 50px;
     }
+
     .accessoire__top::after {
         content: "";
         position: absolute;
@@ -205,32 +214,40 @@
         margin-right: 10%;
         background-color: var(--primary-color-dark);
     }
+
     .accessoire__photo {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
+
     .accessoire__photo:nth-of-type(odd) {
         order: -1;
     }
+
     .accessoire__describtion {
         text-align: left;
     }
+
     .accessoire__describtion h2 {
         margin: 0;
     }
+
     .accessoire__bot {
         display: flex;
         gap: 30px;
         justify-content: center;
     }
+
     .video__wrapper {
         padding: 0;
         margin: 0;
     }
+
     .accessoire__tutoriel {
         max-width: 50%;
     }
+
     .tutoriel__title {
         text-align: left;
     }
