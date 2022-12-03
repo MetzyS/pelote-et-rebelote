@@ -3,7 +3,7 @@
 /* Section Article */
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 
     .event-next-title-description {
         font-weight: 600;
@@ -82,7 +82,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 
     .equipe {
         display: flex;
@@ -141,7 +141,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .article-texte-deux {
         position: absolute;
         width: 1px;
@@ -178,6 +178,7 @@
 .event-list-item {
     border-bottom: 1px solid var(--primary-color);
 }
+
 
 .equipe {
     text-align: center;
