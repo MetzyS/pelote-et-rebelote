@@ -25,7 +25,7 @@
     color: var(--secondary-color-intense);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .idee-container {
         display: flex;
         background-color: var(--primary-color);
@@ -99,11 +99,12 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .texte-et-button {
         display: flex;
         flex-direction: column;
         align-items: center;
+      max-width: 300px;
     }
 
     .categories {
@@ -149,6 +150,7 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
+      align-items: center;
     }
 
 
@@ -181,7 +183,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .Accessoires,
     .Jouets,

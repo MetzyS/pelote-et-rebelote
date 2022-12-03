@@ -25,8 +25,9 @@
 
 .describtion__technique {
     font-style: italic;
-    color: var(--primary-color-dark);
+    color: var(--secondary-color-intense);
     margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .describtion__resume {
@@ -137,6 +138,7 @@
     background-color: var(--primary-color);
     border: none;
     border-radius: 50%;
+  	cursor: pointer;
 }
 
 .video__playpause::before {
@@ -164,6 +166,42 @@
 @media screen and (min-width: 768px) {
     .accessoire {
         padding: 30px;
+    }
+
+    .breadcrumb {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .breadcrumb__item {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .breadcrumb__item::after {
+        content: ">";
+        position: absolute;
+        right: 0;
+        display: inline;
+        margin-right: -15px;
+    }
+
+    .breadcrumb__item:last-of-type {
+        margin-right: 0;
+    }
+
+    .breadcrumb__item:last-of-type::after {
+        display: none;
+    }
+
+    .breadcrumb__link {
+        text-decoration: none;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .breadcrumb__link--active {
+        color: var(--primary-color-dark);
     }
 
     .accessoire__top {
